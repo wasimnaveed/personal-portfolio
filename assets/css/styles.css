@@ -1,17 +1,56 @@
 body {
   margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 .header {
   padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: #0e0d0d;
+  background-color: #282829;
   color: #ffffff;
 }
-
 .header h1 {
   display: inline-block;
   display: flex;
   justify-content: center;
   font-size: 48px;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
 }
