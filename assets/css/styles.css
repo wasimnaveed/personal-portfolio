@@ -1,56 +1,66 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
-.header {
-  padding: 20px;
-  background-color: #282829;
-  color: #ffffff;
-}
-.header h1 {
-  display: inline-block;
+
+.navbar {
   display: flex;
   justify-content: center;
-  font-size: 48px;
-}
-
-nav {
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0%;
 }
 
-.nav-links {
-  flex: 1;
-  text-align: right;
-}
-
-.nav-links ul li {
+.navbar ul {
+  display: flex;
   list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
+  margin: 20px 0px;
 }
-.nav-links ul li a {
-  color: #fff;
+
+.navbar ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
   text-decoration: none;
-  font-size: 30px;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
 }
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #fff;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
 }
-.nav-links ul li:hover::after {
-  width: 100%;
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-.text-box p {
-  margin: 10px 0 40px;
-  font-size: 20px;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid white; */
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.headings {
+  font-family: century;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
 }
