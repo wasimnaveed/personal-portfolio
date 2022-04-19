@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid white; */
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.headings {
+  font-family: century;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+/* About me Section */
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#pic {
+  display: flex;
+}
+
+#pic img {
+  width: 575px;
+  height: 400px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+/* Project Section */
+.marketing-header {
+  text-align: center;
+  text-decoration-line: underline;
+  font-size: 40px;
+}
+.marketing-text {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .marketing-class {
+  }
+
+  .skills {
+    font-size: 10;
+    text-decoration: underline;
+    color: blue;
+  }
+  .skillset {
+    display: flex;
+    flex-direction: row;
+  }
+  .float-left {
+    float: left;
+    margin-right: 25px;
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .marketing-class {
+  }
+  .other-projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 530px) {
+  .placeholder-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    position: absolute;
+    /* width: 100%;
+  height: 100%; */
+  }
+  .flex-item:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    max-height: 50px;
+    min-width: 75%;
+    flex-basis: 100%;
+  }
+  .flex-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    flex-basis: (50% - 1em);
+  }
+  div.other-project-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+  }
+}
+@media screen and (max-width: 320px) {
+  div.other-project-container div.abc {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.abc {
+  display: flex;
+  flex-direction: column;
+  margin: 6%;
+}
+/* Contact Section */
+.contact-main {
+  text-align: center;
+  font-size: 36px;
+  color: aliceblue;
+  text-decoration-line: underline;
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-me {
+  padding: 5px;
+}
+.footer {
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 20px 0px;
+}
+input {
+  padding: 12px;
+  margin: 15px;
+  width: 30%;
+  border: none;
+  outline: none;
+}
+#msg {
+  width: 20%;
+  padding: 0%;
+  margin: 15px;
+  border: none;
+  outline: none;
+}
+#send {
+  padding: 10px;
+  width: 10%;
+  margin: 40px;
+  border: none;
+  outline: none;
+}
+#send:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+}
