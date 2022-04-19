@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
 }
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: center;
@@ -39,7 +40,7 @@ html {
   color: black;
   box-shadow: 0 0 10px white;
 }
-
+/* Home Section */
 #home {
   display: flex;
   flex-direction: column;
@@ -66,7 +67,7 @@ html {
   text-align: center;
   margin: 40px 0px;
 }
-
+/* About me Section */
 #about {
   display: flex;
   flex-direction: column;
@@ -95,7 +96,7 @@ html {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-
+/* Project Section */
 .marketing-header {
   text-align: center;
   text-decoration-line: underline;
@@ -174,6 +175,7 @@ html {
   flex-direction: column;
   margin: 6%;
 }
+/* Contact Section */
 .contact-main {
   text-align: center;
   font-size: 36px;
