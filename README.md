@@ -14,7 +14,6 @@ You can find the application deployed to github pages [here](https://github.com/
 - CSS
 - GitHub Pages
 - FontAwesome
-- ...more
 
 ## Screenshots
 
